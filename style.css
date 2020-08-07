@@ -1,0 +1,85 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;    
+}
+nav h2{
+    font-weight: 400;
+}
+nav{
+    color: #212529;
+    background-color: #f8f9fa;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+input, button{
+    height: 38px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 0.5px solid rgb(206, 212, 218);
+}
+nav button{
+    color: green;
+    border: green;
+    cursor: pointer;
+}
+nav button:hover {
+    color: white;
+    background-color: green;
+}
+
+input[type=submit]{
+    color: white;
+    margin-top: 1rem;
+    background-color: darkslategray;
+    cursor: pointer;
+}
+
+.btn:hover, input[type=submit]:hover{
+    background-color: rgb(71, 102, 102);
+}
+#container{
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 50px;
+    /* display: flex; */
+}
+section#list h2{
+    margin-top: 30px;
+}
+#container input[type="text"]{
+    width: 80%;
+    margin-top: 2em;
+}
+#listt{
+    list-style: none;
+    margin: 1rem 0;
+}
+.l{
+    border: 1px solid rgb(206, 212, 218);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.red{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+footer{
+    text-align: center;
+}
+.red:hover{
+    /* background-color: floralwhite;
+    color: darkslategrey; */
+    transform: scale(1.1);
+}
+.red:hover::before{
+    content: "Delete ";
+}
